@@ -1,0 +1,30 @@
+/** 
+ * # CallEnd SVG Icon. 
+ * @property {node} children -  Elements passed into the SVG Icon.
+ * @property {string} color - This is the fill color of the svg icon.
+ * If not specified, this component will default to muiTheme.palette.textColor.
+ * @property {string} hoverColor - This is the icon color when the mouse hovers over the icon.
+ * @property {object} style	- Override the inline-styles of the root element.
+ * @property {string} viewBox  - Allows you to redefine what the coordinates
+ * without units mean inside an svg element. For example,
+ * if the SVG element is 500 (width) by 200 (height),
+ * and you pass viewBox="0 0 50 20", this means that the coordinates inside
+ * the svg will go from the top left corner (0,0) to bottom right (50,20)
+ * and each unit will be worth 10px. 
+ * @example 
+ * <svg width="24" height="24" ><path d="M12 9c-1.6 0-3.15.25-4.6.72v3.1c0 .39-.23.74-.56.9-.98.49-1.87 1.12-2.66 1.85-.18.18-.43.28-.7.28-.28 0-.53-.11-.71-.29L.29 13.08c-.18-.17-.29-.42-.29-.7 0-.28.11-.53.29-.71C3.34 8.78 7.46 7 12 7s8.66 1.78 11.71 4.67c.18.18.29.43.29.71 0 .28-.11.53-.29.71l-2.48 2.48c-.18.18-.43.29-.71.29-.27 0-.52-.11-.7-.28-.79-.74-1.69-1.36-2.67-1.85-.33-.16-.56-.5-.56-.9v-3.1C15.15 9.25 13.6 9 12 9z"/></svg> 
+ */
+import React from 'react';
+import pure from 'recompose/pure';
+import SvgIcon from '../../SvgIcon';
+
+let CommunicationCallEnd = (props) => (
+  <SvgIcon {...props}>
+    <path d="M12 9c-1.6 0-3.15.25-4.6.72v3.1c0 .39-.23.74-.56.9-.98.49-1.87 1.12-2.66 1.85-.18.18-.43.28-.7.28-.28 0-.53-.11-.71-.29L.29 13.08c-.18-.17-.29-.42-.29-.7 0-.28.11-.53.29-.71C3.34 8.78 7.46 7 12 7s8.66 1.78 11.71 4.67c.18.18.29.43.29.71 0 .28-.11.53-.29.71l-2.48 2.48c-.18.18-.43.29-.71.29-.27 0-.52-.11-.7-.28-.79-.74-1.69-1.36-2.67-1.85-.33-.16-.56-.5-.56-.9v-3.1C15.15 9.25 13.6 9 12 9z"/>
+  </SvgIcon>
+);
+CommunicationCallEnd = pure(CommunicationCallEnd);
+CommunicationCallEnd.displayName = 'CommunicationCallEnd';
+CommunicationCallEnd.muiName = 'SvgIcon';
+
+export default CommunicationCallEnd;

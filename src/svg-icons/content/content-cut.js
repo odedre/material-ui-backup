@@ -1,0 +1,30 @@
+/** 
+ * # ContentCut SVG Icon. 
+ * @property {node} children -  Elements passed into the SVG Icon.
+ * @property {string} color - This is the fill color of the svg icon.
+ * If not specified, this component will default to muiTheme.palette.textColor.
+ * @property {string} hoverColor - This is the icon color when the mouse hovers over the icon.
+ * @property {object} style	- Override the inline-styles of the root element.
+ * @property {string} viewBox  - Allows you to redefine what the coordinates
+ * without units mean inside an svg element. For example,
+ * if the SVG element is 500 (width) by 200 (height),
+ * and you pass viewBox="0 0 50 20", this means that the coordinates inside
+ * the svg will go from the top left corner (0,0) to bottom right (50,20)
+ * and each unit will be worth 10px. 
+ * @example 
+ * <svg width="24" height="24" ><path d="M9.64 7.64c.23-.5.36-1.05.36-1.64 0-2.21-1.79-4-4-4S2 3.79 2 6s1.79 4 4 4c.59 0 1.14-.13 1.64-.36L10 12l-2.36 2.36C7.14 14.13 6.59 14 6 14c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4c0-.59-.13-1.14-.36-1.64L12 14l7 7h3v-1L9.64 7.64zM6 8c-1.1 0-2-.89-2-2s.9-2 2-2 2 .89 2 2-.9 2-2 2zm0 12c-1.1 0-2-.89-2-2s.9-2 2-2 2 .89 2 2-.9 2-2 2zm6-7.5c-.28 0-.5-.22-.5-.5s.22-.5.5-.5.5.22.5.5-.22.5-.5.5zM19 3l-6 6 2 2 7-7V3z"/></svg> 
+ */
+import React from 'react';
+import pure from 'recompose/pure';
+import SvgIcon from '../../SvgIcon';
+
+let ContentContentCut = (props) => (
+  <SvgIcon {...props}>
+    <path d="M9.64 7.64c.23-.5.36-1.05.36-1.64 0-2.21-1.79-4-4-4S2 3.79 2 6s1.79 4 4 4c.59 0 1.14-.13 1.64-.36L10 12l-2.36 2.36C7.14 14.13 6.59 14 6 14c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4c0-.59-.13-1.14-.36-1.64L12 14l7 7h3v-1L9.64 7.64zM6 8c-1.1 0-2-.89-2-2s.9-2 2-2 2 .89 2 2-.9 2-2 2zm0 12c-1.1 0-2-.89-2-2s.9-2 2-2 2 .89 2 2-.9 2-2 2zm6-7.5c-.28 0-.5-.22-.5-.5s.22-.5.5-.5.5.22.5.5-.22.5-.5.5zM19 3l-6 6 2 2 7-7V3z"/>
+  </SvgIcon>
+);
+ContentContentCut = pure(ContentContentCut);
+ContentContentCut.displayName = 'ContentContentCut';
+ContentContentCut.muiName = 'SvgIcon';
+
+export default ContentContentCut;
